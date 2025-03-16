@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pratice Demo</title>
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <form action="" method="post">
+        <label for="fullname">Full Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Your Full Name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Yur Email id"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Create a password"
+          required
+        />
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+          <input type="radio" name="gender" id="male" value="Male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="female"
+            id="female"
+            value="Female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <label for="message">Your Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="Write your message here...."
+        ></textarea>
+        <label for="checkbox">
+          <input type="checkbox" name="" id="" required /> I agree terms and
+          conditions
+        </label>
+        <div class="button-group">
+          <button type="submit">Submit</button>
+          <button type="reset" class="reset-button">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
