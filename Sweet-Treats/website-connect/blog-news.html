@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech New Blog</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      nav {
+        background-color: #444;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+      }
+      section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+      }
+      article {
+        padding: 15px;
+        background-color: #f0f0f0;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      article h3 {
+        margin-top: 0;
+      }
+      time {
+        color: grey;
+        font-style: italic;
+      }
+      abbr {
+        text-decoration: underline;
+        cursor: help;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+        }
+        nav a {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tech News hub</h1>
+      <p>Your daily source for the latest in technology</p>
+    </header>
+    <nav>
+      <a href="#latest-news">Latest News</a>
+      <a href="#articles">Articles</a>
+      <a href="#events">Events</a>
+      <a href="#contacts">Contacts Us</a>
+    </nav>
+    <div class="container">
+      <section id="latest-news">
+        <h2>Latest News</h2>
+        <article>
+          <h3>Apple Unvelis New M2 Chips</h3>
+          <p>
+            On <time datetime="2025-02-16">February 16,2025</time>,Apple
+            introduced its highly anticipated M2 chip ,boasting improved
+            performance and efficiency.
+          </p>
+
+          <p>
+            <abbr title="Central Proceessing Unit">CPU</abbr> benchmarks show a
+            30% increase in speed compared to the M1
+          </p>
+        </article>
+        <article>
+          <h3>OpenAi Launches ChatGpt-5</h3>
+          <p>
+            On <time datetime="202503-01"> March 1 2025</time> OpenAi Announced
+            the release of
+            <abbr title="Generative Pre-trained Transformed">GPT 5</abbr>
+            , bringing advancements in natural language processing capabilites.
+          </p>
+        </article>
+      </section>
+      <section id="articels">
+        <h2>Featured Articles</h2>
+        <article>
+          <h3>Understanding the Web 3.0</h3>
+          <p>
+            Web 3.0 aims to create a decentalized internet powered by
+            <abbr title="">BlockChain.</abbr>
+            it promises greater securtiy and privacy.
+          </p>
+          <p>
+            Published on <time datetime="2025-02-10">February 10 2025</time>
+          </p>
+        </article>
+        <article>
+          <h3>The Rise of Quantom Computing</h3>
+          <p>
+            Quantom computing has he potential to regulationize industries such
+            as crypthography and material science.
+          </p>
+          <p>
+            Published on <time datetime="2025-01-25">Jaunary 25, 2025</time>
+          </p>
+        </article>
+      </section>
+      <section id="events">
+        <h2>Upcoming Events</h2>
+        <article>
+          <h3>TechCon 2025</h3>
+          <p>
+            Join industry leaders at TechCon 20205
+            <time datetime="2025-03-">April 20</time> to
+            <time datetime="202504-25">April 25,2025</time>.
+          </p>
+          <p>Topics include AI, BlockChain</p>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 tech news | All Rights reserved</p>
+    </footer>
+  </body>
+</html>

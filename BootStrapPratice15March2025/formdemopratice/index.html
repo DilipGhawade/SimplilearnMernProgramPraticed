@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form  Prtice</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- create a Bootstrap 5 form with input fields for name, email, password, select dropdown for country ,
+    checkbox for interests , radio button for gender and a submit button  -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Registration Form</h2>
+      <form action="" class="needs-validation" novalidate>
+        <!-- add Bootstrap form validation with valid and invalid feed back messages on each input field  -->
+        <!-- name -->
+         <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label></label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+          <div class="invalid-feedback">
+            Please enter a valid name 
+          </div>  
+          <div class="valid-feedback">
+            Looks good
+          </div>
+         </div>
+         <!-- email  -->
+         <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email"> 
+          <div class="invalid-feedback">
+            Please provide a valid email address
+          </div>
+          <div class="valid-feedback">
+            Looks good
+          </div>
+         </div>
+         <!-- password  -->
+         <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          <div class="invalid-feedback">
+            Please provide a valid password
+          </div>
+          <div class="valid-feedback">
+            Email is Valid
+          </div>
+         </div>
+         <!-- country  -->
+         <div class="mb-3">
+          <label for="country" class="form-label">Country</label>
+          <select name="country" id="country" class="form-select">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="spain">Spain</option>
+            <option value="italy">Italy</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+            <option value="russia">Russia</option>
+            <option value="mexico">Mexico</option>
+            <option value="brazil">Brazil</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+            <option value="venezuela">Venezuela</option>
+          </select>
+         </div>
+         <!-- checkbox  -->
+         <div class="mb-3">
+          <label for="interests" class="form-label">Interests</label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="sports">
+            <label class="form-check-label" for="interests">Sports</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="music">
+            <label class="form-check-label" for="interests">Music</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="movies">
+            <label class="form-check-label" for="interests">Movies</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="books">
+            <label class="form-check-label" for="interests">Books</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="travel">
+            <label class="form-check-label" for="interests">Travel</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="interests" value="food">
+            <label class="form-check-label" for="interests">Food</label>
+          </div>  
+
+         </div>
+         <!-- gender  -->
+         <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="male" name="gender" value="male">
+            <label class="form-check-label" for="gender">Male</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+            <label class="form-check-label" for="gender">Female</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="other" name="gender" value="other">
+            <label class="form-check-label" for="gender">Other</label>
+          </div>
+         </div>
+         <!-- Add Javascript to enable bootstrap 5 form validation on submit -->
+        <script>
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        </script>
+         <!-- submit  -->
+         <button type="submit" class="btn btn-primary ">Submit</button>  
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
