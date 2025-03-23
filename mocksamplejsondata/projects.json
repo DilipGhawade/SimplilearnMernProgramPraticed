@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "name": "Banking App",
+      "status": "Development Completed",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Investment Tracker",
+      "status": "completed"
+    },
+    {
+      "id": "3",
+      "name": "Fintech Solution",
+      "status": "On Hold"
+    },
+    {
+      "id": "5",
+      "name": "Card Management System",
+      "status": "The Project is dismessed becouse of time line given by me"
+    },
+    {
+      "id": "4",
+      "name": "Json Server Moc Rest Api Learning Started",
+      "status": "In Porgress"
+    }
+  ]
+}
